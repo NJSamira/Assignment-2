@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    max-width: 1250px;
+    width: 80%;
+    margin: 0 auto;
+   height: 600px;
+   background:rgba(12, 11, 11, 0.863);
+    
+}
+.span{
+    font-family: "Dancing Script", cursive;
+    font-weight: 90;
+}
+.btn-primary, .btn-primary-1{
+    width: 25%;
+    height: 20%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    border: 1px solid rgb(230, 83, 60);
+}
+.btn-primary-1{
+    width: 25%;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.btn-primary-2{
+    width: 25%;
+    height: 20%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(12, 11, 11, 0.863);
+}
+
+
+/* -------navbar styles starts here-------- */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+}
+.nav-text{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.884);
+}
+nav > div > h5{
+    color: rgb(230, 83, 60);
+    font-size: 2.1rem;
+    font-weight: 800;
+    margin: 0px;
+}
+
+/* ---------header styles starts here-------- */
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 100%;
+}
+.banner-content h1{
+    font-size: 4.3rem;
+    font-weight: 800;
+    color: white;
+    margin: 10px auto;
+}
+
+.banner-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.banner-content{
+    width: 100%;
+   
+    
+
+}

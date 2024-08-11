@@ -42,6 +42,7 @@ body{
     border: 1px solid rgb(255, 255, 255);
     background: rgba(12, 11, 11, 0.863);
 }
+/*-------- shared style -------*/
 .para{
     font-size: 1rem;
     font-weight: 400;
@@ -85,7 +86,7 @@ nav > div > h5{
     height: 100%;
 }
 .banner-content h1{
-    font-size: 4.3rem;
+    font-size: 4.5rem;
     font-weight: 800;
     color: white;
     margin: 10px auto;
@@ -170,14 +171,99 @@ nav > div > h5{
     background: rgba(255, 255, 255, 0.048)
 }
 
+/* -----change habit section starts here--------- */
+.section-1{
+    max-width: 990px;
+    height: 450px;
+    margin-top: 80px;
+}
+.text-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 900;
+}
+.text-content h1{
+    margin: 0px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 16px;
+}
+.para1{
+    font-size: 0.84rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.card-content > h5{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+#card-img{
+    border-radius: 50%;
+    border: 1px dashed gray;
+}
 
+/* --------run section starts here-------- */
+.section-2{
+    width: 990px;
+    height: 360px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 35px 0px;
+    background: rgb(58, 56, 56);
+    border-radius: 18px;
+    gap: 220px;
+    
+}
+.text-content-2{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    gap: 18px;
+}
 
-
-
-
-
-
-
+.text-content-2 h4{ 
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 5px 0px;
+}
+.text-content-2 p{
+    margin: 0px;
+    margin-top: -8px;
+    margin-bottom: 25px;
+}
+.run-img{
+    width: 300px;
+    height: 290px;
+    border-radius: 18px;
+}
 
 
 
@@ -219,7 +305,7 @@ nav > div > h5{
 
     .banner-content h1{
         line-height: 70px;
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .banner-content p{
         margin-top: 20px;
@@ -252,5 +338,23 @@ nav > div > h5{
         left: 5%;
         padding: 5px;
         font-size: 18px;
+    }
+    .cards{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .section-1{
+        margin-top: 0px;
+        width: auto;
+    }
+    .text-content{
+        width: auto;
+        font-size: 20px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .para1{
+        width: 70%;
+        margin: 10px auto;
+        margin-bottom: 30px;
     }
 }

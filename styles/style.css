@@ -9,10 +9,15 @@
 body{
     font-family: "Inter", sans-serif;
     max-width: 1250px;
-    width: 80%;
+    background:rgba(12, 11, 11, 0.863);
+    border: 2px solid red;
+    margin: 0 auto;
+}
+main{
+    max-width: 990px;
+    width: 100%;
     margin: 0 auto;
     height: auto;
-    background:rgba(12, 11, 11, 0.863);
     border: 2px solid red;
 }
 .span{
@@ -59,7 +64,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 6px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .hamburger-manu{
     display: none;
@@ -84,10 +89,10 @@ nav > div > h5{
 /* ---------banner styles starts here-------- */
 .banner-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 80px;
     height: 100%;
+    width: 90%;
 }
 .banner-content h1{
     font-size: 4.5rem;
@@ -102,7 +107,7 @@ nav > div > h5{
 }
 
 .banner-content{
-    width: 100%;
+    width: 52%;
 }
 .banner-main{
     position: relative;
@@ -178,7 +183,7 @@ nav > div > h5{
 /* -----change habit section starts here--------- */
 .section-1{
     max-width: 990px;
-    height: 450px;
+    height: 45%;
     margin-top: 80px;
 }
 .text-content{
@@ -381,7 +386,7 @@ nav > div > h5{
        margin: 5px;
        margin-top: 25px;
        margin-bottom: 20px;
-        justify-content: space-between;
+       justify-content: space-between;
     }
     .hamburger-manu{
         display: block;
@@ -394,108 +399,133 @@ nav > div > h5{
         flex-direction: column;
         gap: 40px;
         height: auto;
-    }
-
-    .banner-content h1{
-        line-height: 70px;
-        font-size: 3rem;
-    }
-    .banner-content p{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .btn-primary-1{
-        width: 45%;
-    }
-    .btn-primary-2{
-        width: 45%;
-    }
-    .box-1{
-        width: 133px;
-        height: 65px;
-        top: 10%;
-        left: 53%;
-        padding: 5px;
-        font-size: 25px;
-    }
-    .box-1 p{
-        font-size: 10px;
-    }
-    .box-2 p{
-        font-size: 10px;
-    }
-    .box-2{
-        width: 150px;
-        height: 67px;
-        top: 40%;
-        left: 5%;
-        padding: 5px;
-        font-size: 18px;
-    }
-    .cards{
-        grid-template-columns: repeat(1 , 1fr);
-    }
-    .section-1{
-        margin-top: 0px;
-        width: auto;
-    }
-    .text-content{
-        width: auto;
-        font-size: 20px;
-        margin-left: 0px;
-        margin-bottom: 10px;
-    }
-    .para1{
-        width: 70%;
-        margin: 10px auto;
-        margin-bottom: 30px;
-    }
-    .section-2{
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        gap: 35px;
-        margin-bottom: 80px;
-        padding: 20px 0px;
-    }
-    .text-content-2{
-        width: auto;
-        gap: 9px;
-        margin-left: 17px;
-    }
-    .text-content-2 button{
-        width: 300px;
-    }
-    .meeting-img{
-        grid-template-columns: repeat(1 , 1fr);
-        padding: 15px 13px;
-
-        }
-    .t-img1{
-        display: none;
-    }
-    .t-img4{
-        display: none;
-    }
-    .meet{
-        align-items: center;
         justify-content: center;
-        text-align: center;
-        margin-bottom: 15px;
+        width: 100%;
+        }
+        .banner-img{
+            width: 310px;
+        }
+        .banner-content{
+            width: 100%;
+            margin-left: 15px;
+        }
+        .banner-content h1{
+            line-height: 70px;
+            font-size: 3rem;
+        }
+        .banner-content p{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .span{
+            font-size: 100px;
+        }
+        .btn-primary-1{
+            width: 45%;
+        }
+        .btn-primary-2{
+            width: 45%;
+        }
+        .box-1{
+            width: 133px;
+            height: 65px;
+            top: 10%;
+            left: 53%;
+            padding: 5px;
+            font-size: 25px;
+        }
+        .box-1 p{
+            font-size: 10px;
+        }
+        .box-2 p{
+            font-size: 10px;
+        }
+        .box-2{
+            width: 150px;
+            height: 67px;
+            top: 40%;
+            left: 5%;
+            padding: 5px;
+            font-size: 18px;
+        }
+        .cards{
+            grid-template-columns: repeat(1 , 1fr);
+        }
+
+
+        .section-1{
+            margin-top: 0px;
+            width: auto;
+        }
+        .text-content{
+            width: auto;
+            font-size: 20px;
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+        .text-content h1{
+            font-size: 31px;
+        }
+        .para1{
+            width: 70%;
+            margin: 10px auto;
+            margin-bottom: 30px;
+        }
+
+
+        .section-2{
+            width: 314px;
+            height: auto;
+            flex-direction: column;
+            gap: 35px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            padding: 20px 0px;
+        }
+        .text-content-2{
+            width: auto;
+            gap: 9px;
+            margin-left: 8px;
+        }
+        .text-content-2 h4{
+            font-size: 31px;
+        }
+        .text-content-2 button{
+            width: 300px;
+        }
+        .meeting-img{
+            grid-template-columns: repeat(1 , 1fr);
+            padding: 15px 7px;
+    
+            }
+        .t-img1{
+            display: none;
+        }
+        .t-img4{
+            display: none;
+        }
+        .meet{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .meeting{
+            font-size: 31px;
+        }
+        .section-3{
+            width: auto;
+            padding: 0px;
+            margin-top: 30px;
+        }
+        .meet-text h5{
+            margin-left: 17px;
+            font-weight: 500;
+         }
+        .meet-text{
+            top: 180px;
+            left: 5px;
+        }
     }
-    .meeting{
-        font-size: 40px;
-    }
-    .section-3{
-        width: auto;
-        padding: 0px;
-        margin-top: 30px;
-    }
-    .meet-text h5{
-        margin-left: 17px;
-        font-weight: 500;
-     }
-    .meet-text{
-        top: 180px;
-    }
-}
+
+    

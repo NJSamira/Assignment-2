@@ -12,9 +12,9 @@ body{
     background:rgba(12, 11, 11, 0.863);
     margin: 0 auto;
 }
-main{
+main > .section-1 , .section-2 , .section-3{
     max-width: 990px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     height: auto;
 }
@@ -33,6 +33,7 @@ main{
     border-radius: 46px;
     background: rgb(230, 83, 60);
     border: 1px solid rgb(230, 83, 60);
+    cursor: pointer;
 }
 .btn-primary-1{
     width: 25%;
@@ -48,6 +49,7 @@ main{
     color: white;
     border: 1px solid rgb(255, 255, 255);
     background: rgba(12, 11, 11, 0.863);
+    cursor: pointer;
 }
 /*-------- shared style -------*/
 .para{
@@ -55,7 +57,12 @@ main{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
 }
-
+.para1{
+    font-size: 0.84rem;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.5);
+}
 /* -------navbar styles starts here-------- */
 .navbar{
     display: flex;
@@ -181,7 +188,7 @@ main{
 /* -----change habit section starts here--------- */
 .section-1{
     max-width: 990px;
-    height: 45%;
+    height: auto;
     margin-top: 80px;
 }
 .text-content{
@@ -213,12 +220,6 @@ main{
     justify-content: center;
     text-align: center;
     line-height: 16px;
-}
-.para1{
-    font-size: 0.84rem;
-    font-weight: 400;
-    line-height: 25px;
-    color: rgba(255, 255, 255, 0.5);
 }
 .card-content > h5{
     color: white;
@@ -282,28 +283,35 @@ main{
     width: 600px;
     height: 120px;
     margin-top: 80px;
-    margin-left: 170px;
+    margin-left: 350px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
-
+/* ---------BMI calculation---------- */
 .BMI-section2{
+    height: 400px;
+    margin: 0px;
+    width: 1250px;
+    box-sizing: border-box;
     margin-top: 20px;
     background: rgb(58, 56, 56);
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    padding: 20px 30px;
+    padding-top: 40px;
 }
 .table{
     border-collapse: collapse;
 }
-td{
-    border: 2px solid gray;
-    padding: 5px 10px;
-    
-}
-.th{
-    border: 2px solid gray;
-    padding: 5px 10px;
+td , th{
+    border: 1px solid gray;
+    padding: 8px 15px;
+    text-align: left;
 }
 tbody{
     color: rgba(255, 255, 255, 0.5);
@@ -315,6 +323,60 @@ tbody{
     font-size: 1rem;
     font-weight: 500;
 }
+.chart{
+    margin-left: 20px;
+}
+.Calculate{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 130px;
+}
+.BMI-section > p{
+    margin: 0px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+.input{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 10px;   
+}
+::placeholder { 
+    color: rgba(255, 255, 255, 0.5); 
+}
+.input-select{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+.select-1{
+    padding-left: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px 15px;
+
+}
+#select-2{
+    grid-column: span 2;
+    margin-bottom: 30px;
+   
+}
+.btn-primary-3{
+    width: 90%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+
 /* ------- meeting section starts here --------- */
 .section-3{
     width: 990px;
@@ -462,6 +524,9 @@ hr{
 
 
 @media screen and (max-width: 576px) {
+    main > .section-1 , .section-2 , .section-3{
+        margin: 0px 10px;
+    }
     .navbar{
        margin: 5px;
        margin-top: 25px;
@@ -565,7 +630,6 @@ hr{
         .text-content-2{
             width: auto;
             gap: 9px;
-            margin-left: 8px;
             align-items: center;
         }
         .text-content-2 h4{
@@ -575,6 +639,68 @@ hr{
         .text-content-2 button{
             width: 300px;
         }
+        .text-content-2 p{
+            width: 60%;
+           margin-bottom: 10px;
+           align-items: center;
+           margin-top: 0px;
+        }
+        /* ------BMI section------- */
+        .BMI-section{
+            width: auto;
+            height: auto;
+            margin-top: 40px;
+            margin-left: 10px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .BMI-section2{
+            height: auto;
+            width: auto;
+            padding-left: 20px;
+            margin-left: -60px;
+            margin-top: 20px;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+        .chart{
+            margin-left: 20px;
+        }
+        td , th{
+            padding: 10px 30px;
+        }
+        .Calculate > p{
+            margin: 0px;
+            margin-bottom: 15px;
+        }
+        .Calculate{
+            width: auto;
+            flex-direction: column;
+            align-items: start;
+            justify-content: left;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        .input{
+            gap: 6px; 
+            width: 80%;  
+        }
+        .input-select{
+            padding: 10px 8px;
+        }
+        .select-1{
+            margin: 0px;
+            padding: 10px 2px;
+            width: auto;
+        }
+
+
+
+
+
+
+
 
         /* meet section starts here */
         .meeting-img{
@@ -639,7 +765,7 @@ hr{
             margin: 0px;
         }
         .ft-h5{
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .get{
             width: 300px;

@@ -561,9 +561,7 @@ hr{
         gap: 40px;
         height: auto;
         justify-content: center;
-        width: 100%;
-        border: 2px solid red;
-        padding-right: 10px;
+        width: 95%;
         }
         .banner-img{
             width: auto;
@@ -595,6 +593,7 @@ hr{
             top: 10%;
             left: 53%;
             padding: 5px;
+            padding-left: 15px;
             font-size: 25px;
         }
         .box-1 p{

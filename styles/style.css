@@ -11,12 +11,14 @@ body{
     max-width: 1250px;
     background:rgba(12, 11, 11, 0.863);
     margin: 0 auto;
+    height: auto;
 }
 main > .section-1 , .section-2 , .section-3{
     max-width: 990px;
     width: 80%;
     margin: 0 auto;
     height: auto;
+    margin-top: 80px;
 }
 .span{
     font-family: "Italianno", cursive;
@@ -187,9 +189,8 @@ main > .section-1 , .section-2 , .section-3{
 
 /* -----change habit section starts here--------- */
 .section-1{
-    max-width: 990px;
-    height: auto;
-    margin-top: 80px;
+    width: 990px;
+    height: 400px;
 }
 .text-content{
     width: 50%;
@@ -237,7 +238,6 @@ main > .section-1 , .section-2 , .section-3{
 .section-2{
     width: 990px;
     height: 360px;
-    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,14 +373,10 @@ tbody{
     font-family: "Inter", sans-serif;
 }
 
-
-
-
-
 /* ------- meeting section starts here --------- */
 .section-3{
     width: 990px;
-    padding: 35px 0px;
+    padding: 5px 0px;
     margin-top: 80px;
    
 }
@@ -448,7 +444,25 @@ tbody{
 
 }
 
-
+/* --------------unique section--------------- */
+.unique{
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.sponsor{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.unique-img{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+}
+.unique-img-1{
+    width: 100%;
+    height: 100%;
+}
 
 /*------ footer section starts here----- */
 .footer1{
@@ -527,6 +541,7 @@ hr{
     main > .section-1 , .section-2 , .section-3{
         margin: 0px 10px;
     }
+    /* -----------navbar section starts here-------- */
     .navbar{
        margin: 5px;
        margin-top: 25px;
@@ -540,12 +555,15 @@ hr{
     .nav-text{
         display: none;
     }
+    /* --------banner section starts here----------- */
     .banner-container{
         flex-direction: column;
         gap: 40px;
         height: auto;
         justify-content: center;
         width: 100%;
+        border: 2px solid red;
+        padding-right: 10px;
         }
         .banner-img{
             width: auto;
@@ -594,13 +612,16 @@ hr{
             font-size: 18px;
         }
 
-        /* change habit section starts here */
+        /*------ change habit section starts here-------- */
         .cards{
             grid-template-columns: repeat(1 , 1fr);
         }
         .section-1{
-            margin-top: 0px;
-            width: auto;
+            margin-top: 0 auto;
+            width: 100%;
+        }
+        #sec-1{
+            margin-left: 40px;
         }
         .text-content{
             width: auto;
@@ -617,7 +638,7 @@ hr{
             margin-bottom: 30px;
         }
 
-/* run section starts here */
+        /*--------- run section starts here ----------*/
         .section-2{
             width: auto;
             height: auto;
@@ -631,21 +652,23 @@ hr{
             width: auto;
             gap: 9px;
             align-items: center;
+            text-align: left;
         }
         .text-content-2 h4{
-            font-size: 31px;
-            padding-right: 100px;
+            font-size: 38px;
+            padding-right: 60px;
+            
         }
         .text-content-2 button{
             width: 300px;
         }
         .text-content-2 p{
-            width: 60%;
+           width: 76%;
            margin-bottom: 10px;
            align-items: center;
            margin-top: 0px;
         }
-        /* ------BMI section------- */
+        /* ------BMI section starts here------- */
         .BMI-section{
             width: auto;
             height: auto;
@@ -692,17 +715,10 @@ hr{
         .select-1{
             margin: 0px;
             padding: 10px 2px;
-            width: auto;
+            width: 100%;
         }
 
-
-
-
-
-
-
-
-        /* meet section starts here */
+        /*---------- meet section starts here----------- */
         .meeting-img{
             grid-template-columns: repeat(1 , 1fr);
             padding: 30px auto;
@@ -723,15 +739,15 @@ hr{
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
         .meeting{
-            font-size: 31px;
+            font-size: 38px;
         }
         .section-3{
             width: auto;
             padding: 0px;
-            margin-top: 30px;
+            margin-top: 50px;
         }
         .meet-text h5{
             margin-left: 17px;
@@ -741,11 +757,27 @@ hr{
             top: 260px;
             left: 5px;
         }
+        /* ---------unique section starts here---------- */
+        .unique{
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .sponsor{
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+        .unique-img{
+            grid-template-columns: repeat(1 , 1fr);
+            margin: 0 auto;
+        }
 
-        /* footer section starts here */
+
+        /* ------------ footer section starts here -----------*/
         .footer1{
             height: auto;
-            padding-top: 30px;
+            padding-top: 40px;
         }
         .footer{
             grid-template-columns: repeat(1 , 1fr);

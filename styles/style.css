@@ -300,7 +300,7 @@ main > .section-1 , .section-2 , .section-3{
     background: rgb(58, 56, 56);
     display: flex;
     align-items: flex-start;
-    justify-content: left;
+    justify-content: space-around;
     text-align: left;
     padding: 20px 30px;
     padding-top: 40px;
